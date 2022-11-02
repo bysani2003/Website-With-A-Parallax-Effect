@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--https://files.000webhost.com/-->
+    <!--https://quiz2003.000webhostapp.com/-->
+    <!--Meta data-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Link css and Js-->
+    <link rel="stylesheet" href="styles.css">
+   
+    
+    <title>Quiz</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">VIT</a>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#btn2">Test</a></li>
+        </ul>
+    </header>
+    <section id="home">
+        <img src="images/stars.png" id="stars">
+        <img src="images/moon.png" id="moon">
+        <img src="images/mountains_behind.png" id="mountains_behind">
+        <h2 id="text"> VITEEE  </h2>
+        <a href="#sec" id="btn">Learn More</a>
+        <img src="images/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>About Vit:</h2>
+        <p>VIT was established with the aim of providing quality  higher education on par with international standards.  It persistently seeks and adopts innovative 
+            methods to improve the quality of higher education on a consistent basis.The campus has a cosmopolitan
+              atmosphere with students from all corners of the globe. Experienced and learned teachers are strongly encouraged to nurture the students. 
+                The global standards set at VIT in the field of teaching and research spur us on in our relentless pursuit of excellence.
+                 In fact, it has become a way of life for us. The highly motivated youngsters on the campus are a constant source of pride. <br><br><br>
+                 Our Memoranda of Understanding with various international universities are our major strength. They provide for an exchange of students and faculty and encourage 
+                    joint research projects for the mutual benefit of these universities. 
+                    Many of our students, who pursue their research projects in foreign universities,
+                     bring high quality to their work and esteem to India and have done us proud. With steady steps,
+             we continue our march forward. We look forward to meeting you here at VIT.</p><br><br><br>
+        <h2>VITEEE 2023:</h2>
+        <p>VITEEE is an annual entrance exam conducted by VIT 
+            (Vellore Institute of Technology) for admission in engineering courses 
+            at their university. They conduct this examination for two campuses i.e.
+             Chennai and Vellore. The admission 
+            is done completely on the basis of performance in VITEEE entrance exam.<br><br>
+            
+               VITEEE examination has 125
+                 questions divided in four sections; 
+                 Physics, Chemistry, mathematics and English. All the questions are multiple choices with four options each.
+                 1 mark is awarded for every correct answer and there will be no negative marking.
+             It will be a two and a half hour paper of VITEEE <br></p>
+             <a href="quiz.html" id="btn2">Start The Test</a>   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+             <p class="copyright" >© Sujith Bysani Santhosh 20MID0180</p>
+    </div>
+    
+    
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+
+        window.addEventListener('scroll',function(){
+            let value= window.scrollY;
+            stars.style.left = value*0.25+'px';
+            moon.style.top = value*1.05+"px";
+            mountains_behind.style.top = value*0.5+"px";
+            mountains_front.style.top = value*0+"px";
+           text.style.marginRight = value*2+"px";
+           text.style.marginTop = value*1.5+"px";
+           btn.style.marginTop = value*1.5+"px";
+
+        })
+
+    </script>
+</body>
+</html>
